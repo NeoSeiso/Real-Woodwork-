@@ -18,7 +18,7 @@ export default function CTA() {
             Ready to Start Your Project?
           </h2>
           <p className="text-lg md:text-xl text-beige mb-10 max-w-2xl mx-auto">
-            Get in touch with us today for a free consultation and quote. Let's bring your vision to life!
+            Get in touch with us today for a free consultation and quote. Let&apos;s bring your vision to life!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link

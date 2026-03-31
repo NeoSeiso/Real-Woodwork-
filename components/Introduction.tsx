@@ -25,7 +25,7 @@ export default function Introduction() {
               From custom decking and elegant pergolas to bespoke kitchens and intricate staircases, our team of skilled artisans delivers exceptional results on every project. We combine traditional woodworking techniques with modern innovation to ensure quality and durability.
             </p>
             <p className="text-gray-600 leading-relaxed text-lg">
-              Whether you're looking to enhance your outdoor living space or transform your interior, we're here to make it happen with professionalism and pride.
+              Whether you&apos;re looking to enhance your outdoor living space or transform your interior, we&apos;re here to make it happen with professionalism and pride.
             </p>
           </div>
           <motion.div
