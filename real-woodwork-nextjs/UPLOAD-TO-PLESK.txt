@@ -1,0 +1,73 @@
+========================================
+UPLOAD THESE FILES TO PLESK /httpdocs/
+========================================
+
+You need to upload the Next.js project files to your Plesk server first!
+
+CURRENT ISSUE:
+--------------
+The files are not on the server yet. That's why npm can't find package.json.
+
+SOLUTION - Upload Files First:
+-------------------------------
+
+METHOD 1: Via Plesk File Manager (Easiest)
+-------------------------------------------
+1. Open Plesk → Files → File Manager
+2. Navigate to /httpdocs/
+3. DELETE everything currently in /httpdocs/ (if any)
+4. Go to your local computer: 
+   C:\SA-Telecoms\Clients Work\REAL WOODWORK PTY LTD\real-woodwork-nextjs\
+5. Select ALL files and folders EXCEPT:
+   - node_modules (folder)
+   - .next (folder)  
+   - .git (folder)
+6. Zip them or upload directly to /httpdocs/
+7. Make sure these files are in /httpdocs/:
+   ✓ server.js
+   ✓ package.json
+   ✓ package-lock.json
+   ✓ next.config.ts
+   ✓ tsconfig.json
+   ✓ tailwind.config.ts
+   ✓ postcss.config.mjs
+   ✓ app/ (folder)
+   ✓ components/ (folder)
+   ✓ public/ (folder)
+
+METHOD 2: Via FTP
+-----------------
+1. Use FileZilla or any FTP client
+2. Connect to: realwoodwork.co.za
+3. Navigate to /httpdocs/
+4. Upload all files from:
+   C:\SA-Telecoms\Clients Work\REAL WOODWORK PTY LTD\real-woodwork-nextjs\
+5. DO NOT upload: node_modules, .next, .git folders
+
+METHOD 3: Via Git (If you have SSH)
+------------------------------------
+ssh your-username@realwoodwork.co.za
+cd /var/www/vhosts/realwoodwork.co.za/httpdocs
+git clone https://github.com/NeoSeiso/Real-Woodwork-.git temp
+cd temp/real-woodwork-nextjs
+mv * ../../
+mv .* ../../ 2>/dev/null
+cd ../../
+rm -rf temp
+
+AFTER FILES ARE UPLOADED:
+--------------------------
+1. In Plesk Node.js settings, click "NPM Install"
+2. Then run: npm run build
+3. Restart the app
+
+VERIFY FILES ARE UPLOADED:
+--------------------------
+In Plesk File Manager, check /httpdocs/ contains:
+✓ server.js
+✓ package.json  
+✓ app/
+✓ components/
+✓ public/
+
+If these files exist, THEN run npm install.
