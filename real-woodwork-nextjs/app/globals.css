@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-brown: #5D4037;
+    --secondary-brown: #795548;
+    --dark-brown: #3E2723;
+    --light-brown: #A1887F;
+    --beige: #D7CCC8;
+    --cream: #EFEBE9;
+    --gold: #C9A961;
+    --whatsapp: #25D366;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
