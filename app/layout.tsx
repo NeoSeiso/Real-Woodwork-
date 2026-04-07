@@ -21,10 +21,15 @@ export const metadata: Metadata = {
   description: "Professional carpentry services in Ballito, KwaZulu-Natal. Specializing in decking, pergolas, custom kitchens, staircases, and quality woodwork.",
   keywords: "carpentry, woodwork, decking, pergolas, custom kitchens, Ballito, KwaZulu-Natal, South Africa",
   authors: [{ name: "REAL WOODWORK PTY LTD" }],
+  icons: {
+    icon: "/logo/RW Logo.jpeg",
+    apple: "/logo/RW Logo.jpeg",
+  },
   openGraph: {
     title: "REAL WOODWORK PTY LTD - Expert Carpentry Services",
     description: "Professional carpentry services in Ballito, KwaZulu-Natal",
     type: "website",
+    images: ["/logo/RW Logo.jpeg"],
   },
 };
 
