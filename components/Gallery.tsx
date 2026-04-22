@@ -7,11 +7,11 @@ import { useState } from "react";
 const galleryImages = [
   { src: "/clients-work/Pergola.jpeg", title: "Pergola Design" },
   { src: "/clients-work/work0.jpeg", title: "Custom Woodwork" },
-  { src: "/clients-work/Work01.jpeg", title: "Expert Craftsmanship" },
-  { src: "/clients-work/work8.jpeg", title: "Outdoor Structures" },
-  { src: "/clients-work/work5.jpeg", title: "Decking Solutions" },
-  { src: "/clients-work/work9.jpeg", title: "Construction Excellence" },
-  { src: "/clients-work/work7.jpeg", title: "Custom Solutions" },
+  { src: "/clients-work/Work01.jpeg", title: "Outdoor Deck and Stairway" },
+  { src: "/clients-work/work8.jpeg", title: "Decking" },
+  { src: "/clients-work/work5.jpeg", title: "Bench and Walkway" },
+  { src: "/clients-work/work9.jpeg", title: "Fixed & Sliding Screens" },
+  { src: "/clients-work/work7.jpeg", title: "Docks" },
   { src: "/clients-work/work4.jpeg", title: "Professional Work" },
 ];
 
